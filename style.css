@@ -151,10 +151,29 @@ header{
 }
 
 .nav-links{
-    display:flex;
-    list-style:none;
-    gap:35px;
+    display:none;
+
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+
+    padding:25px 0;
+
+    background:rgba(10,10,10,0.98);
+    backdrop-filter:blur(20px);
+
+    border-radius:0 0 20px 20px;
 }
+
+.nav-links.active{
+    display:flex;
+}
+
 
 .nav-links a{
     text-decoration:none;
@@ -184,7 +203,7 @@ header{
 }
 
 .menu-btn{
-    display:none;
+    display:block;
     font-size:1.5rem;
     cursor:pointer;
 }
@@ -1504,9 +1523,6 @@ section{
 
     .menu-btn{
         display:block;
-        font-size:1.8rem;
-        color:#fff;
-        cursor:pointer;
     }
 
     .nav-links{
@@ -1543,9 +1559,6 @@ section{
         font-size:1.2rem;
     }
 
-    .menu-btn{
-        margin-left:auto;
-    }
 }
 
 .hidden{
