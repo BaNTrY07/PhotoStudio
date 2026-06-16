@@ -1531,6 +1531,22 @@ section{
     .nav-links.active{
         display:flex;
     }
+
+    .navbar{
+        width:95%;
+        padding:15px 20px;
+        margin:10px auto;
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .logo{
+        font-size:1.2rem;
+    }
+
+    .menu-btn{
+        margin-left:auto;
+    }
 }
 
 .hidden{
